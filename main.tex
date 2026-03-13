@@ -1,0 +1,119 @@
+%----------------------------------------------------------------------------------------
+%  PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+\documentclass[aspectratio=169,xcolor=dvipsnames]{beamer}
+\usetheme{SimplePlusAIC}
+
+\usepackage{hyperref}
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and
+% \bottomrule in tables
+\usepackage{svg} %allows using svg figures
+\usepackage{tikz}
+\usepackage{makecell}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{textcomp}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\usepackage{multicol}
+\usepackage{dsfont}
+\usepackage{bm}
+\usepackage{tikz}
+\usetikzlibrary{positioning, arrows.meta}
+\usepackage{lipsum}
+
+\newcommand*{\defeq}{\stackrel{\text{def}}{=}}
+
+%Select the Epilogue font (requires luaLatex or XeLaTex compilers)
+\usepackage{fontspec}
+\setsansfont{Epilogue}[
+  Path=./epilogueFont/,
+  Scale=0.7,
+  Extension = .ttf,
+  UprightFont=*-Regular,
+  BoldFont=*-Bold,
+  ItalicFont=*-Italic,
+  BoldItalicFont=*-BoldItalic
+]
+
+%----------------------------------------------------------------------------------------
+%  TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title[Kriterion]{Template title} % The short
+% title appears at the bottom of every slide, the full title is only
+% on the title page
+\subtitle{Template sub-title}
+
+\author[Surname]{Presenter name}
+\institute[Institute name]{Istitute name \newline Location}
+% Your institution as it will appear on the bottom of every slide,
+% maybe shorthand to save space
+
+\date{\today} % Date, can be changed to a custom date
+%----------------------------------------------------------------------------------------
+%  PRESENTATION SLIDES
+%----------------------------------------------------------------------------------------
+\setbeamertemplate{caption}[numbered]
+
+\begin{document}
+
+\begin{frame}[plain]
+  % Print the title page as the first slide
+  \titlepage
+\end{frame}
+
+% \begin{frame}{Overview}
+%     % Throughout your presentation, if you choose to use \section{}
+% and \subsection{} commands, these will automatically be printed on
+% this slide as an overview of your presentation
+%     \tableofcontents
+% Not compiling for some reason.
+% \end{frame}
+
+%------------------------------------------------
+\section{Introduction and general overview}
+%------------------------------------------------
+
+\begin{frame}{Introduction}
+  \lipsum[1]
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}{Introduction continued}
+  \lipsum[2]
+\end{frame}
+
+%------------------------------------------------
+\section{Main body}
+%------------------------------------------------
+
+%------------------------------------------------
+\begin{frame}{Content}
+
+  Text with citation \cite{Chen2024-fg}.
+
+\end{frame}
+
+%------------------------------------------------
+\section{Conclusion}
+%------------------------------------------------
+
+\begin{frame}{Conclusion}
+
+  \lipsum[3]
+
+\end{frame}
+
+\begin{frame}{References}
+
+  \bibliographystyle{unsrt}
+  \bibliography{main}
+
+\end{frame}
+%------------------------------------------------
+
+\end{document}

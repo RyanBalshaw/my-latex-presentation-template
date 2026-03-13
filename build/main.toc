@@ -1,0 +1,3 @@
+\beamer@sectionintoc {1}{Introduction and general overview}{2}{0}{1}
+\beamer@sectionintoc {2}{Main body}{4}{0}{2}
+\beamer@sectionintoc {3}{Conclusion}{5}{0}{3}
